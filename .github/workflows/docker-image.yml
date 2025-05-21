@@ -27,7 +27,7 @@ jobs:
           docker buildx build \
             --platform linux/amd64,linux/arm64 \
             --file Dockerfile \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/yourrepo:${SHORT_SHA} \
-            --tag ${{ secrets.DOCKERHUB_USERNAME }}/yourrepo:latest \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/mkdocs-material:${SHORT_SHA} \
+            --tag ${{ secrets.DOCKERHUB_USERNAME }}/mkdocs-material:latest \
             --push .
 
